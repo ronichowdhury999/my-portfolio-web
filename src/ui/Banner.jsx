@@ -1,8 +1,8 @@
 import Container from "./Container"
 
-const Banner = () => {
+const Banner = (id) => {
   return (
-    <Container className="bg-red-950">Banner</Container>
+    <Container  className="bg-red-950" id="home">Banner</Container>
   )
 }
 

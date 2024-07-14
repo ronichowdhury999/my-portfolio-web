@@ -9,16 +9,22 @@ const Header = () => {
     { title: "Contact", link: 'contact', value: "04", delay: "04" },
   ];
   return (
-    <div className="h-20 shadow-lg shadow-designColor/10 px-4 lg:px-0">
+    <div className="h-20 shadow-lg shadow-designColor/10 px-4 lg:px-0 sticky top-0 z-50 bg-praimaryColor">
       <div className="max-w-[1300px] mx-auto flex items-center h-full justify-between ">
 
         <img className="w-14 opacity-75 hover:opacity-100 duration-200 cursor-pointer" src="/src/assets/logo.png" alt="logo" />
         <div className="hidden md:inline-flex items-center gap-6
         ">
-          <div className="flex text-[14px] gap-6">
+          <div  className="flex text-[14px] gap-6">
             {
               NavItems?.map((item) => (
-                <Link className="font-medium hover:text-designColor cursor-pointer duration-300">
+                  <Link
+                  key={item?.title}
+                  smooth = {true}
+                  duration={500}
+                  offset={-80}
+                   to={item?.link}  
+                   className="font-medium hover:text-designColor cursor-pointer duration-300">
                   <p>
                     <span className="text-designColor ml-1">
                       {item.value}

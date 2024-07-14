@@ -1,6 +1,9 @@
 import About from "./ui/About"
 import Banner from "./ui/Banner"
+import Contact from "./ui/Contact"
+import Experience from "./ui/Experience"
 import Header from "./ui/Header"
+import Project from "./ui/Project"
 
 function App() {
   return (
@@ -8,6 +11,9 @@ function App() {
      <Header></Header>
      <Banner></Banner>
      <About></About>
+     <Experience></Experience>
+     <Project></Project>
+     <Contact></Contact>
     </main>
   )
 }
